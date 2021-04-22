@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketchers</title>
+    <style>
+        .Main{
+            width: 100%;
+            height: 100%;
+            border: solid 7px lime;
+        }
+        .BackHome{
+            float: right;
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <button id="BackToHome" onclick="HomeFunction()" class="BackHome">Back to Home</button>
+    <button onclick="myFunction()">Click me</button>
+    <div class="Main"></div>
+
+
+<script>
+
+function myFunction(){
+     let i = 0;
+        while (i < 999999999999999999999999999) { // выводит 0, затем 1, затем 2
+         alert( i );
+     i++;
+};};
+function HomeFunction(){
+    document.getElementById("BackToHome").onclick = function () {
+    location.href = "index.html";
+};
+}
+ </script>
+</body>
+</html>
